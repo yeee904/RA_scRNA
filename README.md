@@ -25,13 +25,18 @@ Scripts:
 01 cellranger.sh
 single cell RNA-seq data alignment using CellRanger
 output: expression matrix of each sample
+
 02 merge-individual sample.R
 merge all individual Seurat objects from the same tissue (PBMC or synovial tissue)
+
 03 extract-major celltype.R
 extract major cell types from PBMC and SM.
+
 04 merge-major celltype.R
 integrate major cell types from PBMC and SM for further sub-clustering
+
 05 DE_and_enrich_test.R
 find differential genes and do enrich test;calculate module score.
+
 07 cellphoneDB.sh
 predict cell-cell interaction using cellphoneDB. 
