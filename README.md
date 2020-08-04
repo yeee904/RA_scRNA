@@ -38,5 +38,8 @@ integrate major cell types from PBMC and SM for further sub-clustering
 05 DE_and_enrich_test.R
 find differential genes and do enrich test;calculate module score.
 
-07 cellphoneDB.sh
+06 Seurat-Monocle3.R
+using Monocle3 to do trajectory analysis
+
+07-1 samples_prepaired-cellphoneDB.R 07-2 cellphoneDB.sh
 predict cell-cell interaction using cellphoneDB. 
