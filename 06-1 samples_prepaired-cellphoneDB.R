@@ -2,12 +2,12 @@ library(Seurat)
 library(dplyr)
 
 ### Read in expression data of interacting cells
-load("D:/ÎÒµÄ¿ÎÌâ/RA/0321ÉÏ´«/B_labeled_0321.RData")
-load("D:/ÎÒµÄ¿ÎÌâ/RA/0321ÉÏ´«/Mk-labeled-0207.RData")
-load("D:/ÎÒµÄ¿ÎÌâ/RA/0321ÉÏ´«/RA_CD4T_labeled_0328.RData")
-load("D:/ÎÒµÄ¿ÎÌâ/RA/0321ÉÏ´«/RA_DC_labeled_0201.RData")
-# load("C:/Users/aking/Desktop/0321?Ï´?/pbmc_CD8NK_0214.RData")
-#load("C:/Users/aking/Desktop/0321?Ï´?/RA_DC_and_markers_labeled_0215.RData")
+load("B_labeled_0321.RData")
+load("Mk-labeled-0207.RData")
+load("RA_CD4T_labeled_0328.RData")
+load(RA_DC_labeled_0201.RData")
+# load("C:/Users/aking/Desktop/0321?æ´—?/pbmc_CD8NK_0214.RData")
+#load("C:/Users/aking/Desktop/0321?æ´—?/RA_DC_and_markers_labeled_0215.RData")
 
 
 head(RA_DC@meta.data)
