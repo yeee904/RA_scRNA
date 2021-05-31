@@ -12,7 +12,7 @@ platform: R, install by "install.packages(Seurat)"
 3. clusterProfiler v3.12.0	(Yu et al., 2012)
 source: https://guangchuangyu.github.io/software/clusterProfiler/
 platform: R, install by "BiocManager::install(clusterPfrofiler)"
-4. DAVID	(Huang et al., 2009a, b)
+4. DAVID 6.8	(Huang et al., 2009a, b)
 source: https://david.ncifcrf.gov/,online tool,following official structions.
 5. Monocle3	(Cao et al., 2019; Qiu et al., 2017a; Qiu et al., 2017b; Trapnell et al., 2014).
 source: https://cole-trapnell-lab.github.io/monocle3/
@@ -32,15 +32,15 @@ merge all individual Seurat objects from the same tissue (PBMC or synovial tissu
 03 extract-major celltype.R
 extract major cell types from PBMC and SM.
 
-04 merge-major celltype.R
-integrate major cell types from PBMC and SM for further sub-clustering
-
-05 DE_and_enrich_test.R
+04 DE_and_enrich_test.R
 find differential genes and do enrich test;calculate module score.
 
-06 Seurat-Monocle3.R
+05 Seurat-Monocle3.R
 using Monocle3 to do trajectory analysis
 
-07-1 samples_prepaired-cellphoneDB.R 07-2 cellphoneDB.sh
+06-1 samples_prepaired-cellphoneDB.R 
+prepare data for cellphoneDB
+
+06-2 cellphoneDB.sh
 predict cell-cell interaction using cellphoneDB. 
 
